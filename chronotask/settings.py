@@ -82,9 +82,17 @@ DATABASES = {
         'PASSWORD': 'test',
         'HOST': '10.10.10.128',
         'PORT': '1433',     
-        'OPTIONS':{'driver': 'ODBC Driver 17 for     SQL Server',
+        'OPTIONS':{'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
+    'mysql_db': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'labgener_wp494',
+        'USER': 'labgener',
+        'PASSWORD': "+fhiH*Q=3W#$E'z",
+        'HOST': 'athila.yoursitesecure.net',
+        'PORT': '3306',
+    }
 }
 
 

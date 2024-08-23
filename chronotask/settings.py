@@ -88,8 +88,8 @@ DATABASES = {
     'mysql_db': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'labgener_wp494',
-        'USER': 'labgener',
-        'PASSWORD': "+fhiH*Q=3W#$E'z",
+        'USER': 'labgener_dev',
+        'PASSWORD': 'As142536*',
         'HOST': 'athila.yoursitesecure.net',
         'PORT': '3306',
     }
@@ -136,3 +136,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = None

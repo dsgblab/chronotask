@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Prospect(models.Model):
-    id = models.CharField(primary_key=True,max_length=30)
-    form_id = models.CharField(max_length=30)
-    submission_id = models.CharField(max_length=30)
+    uuid = models.BigIntegerField(primary_key=True)
+    form_id = models.SmallIntegerField()
+    submission_id = models.IntegerField()
     field_name = models.CharField(max_length=30)
-    field_value = models.CharField(max_length=30)
-    created_at = models.CharField(max_length=30)
+    field_value = models.TextField(blank=True, null=True)
+    created_at = models.DateField(auto_now=False, auto_now_add=False)
